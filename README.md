@@ -1,4 +1,4 @@
 # Portfolio
 This is my first portfolio
 <br>
-Author - Sourav Sanyal (COMPUTRONICS)
+Author - Sourav Sanyal (COMPUTER APPLICATION)
