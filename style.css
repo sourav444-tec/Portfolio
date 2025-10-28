@@ -128,6 +128,7 @@ body {
   font-size: 4rem;
   margin-bottom: 1.5rem;
   background: linear-gradient(45deg, var(--accent) 30%, #ffffff 70%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
