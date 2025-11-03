@@ -818,4 +818,22 @@ html {
     width: 100%;
     text-align: center;
   }
+
+  /* Make contact icons fit better on small screens */
+  .contact-icon,
+  .contact-card i {
+    font-size: 1.8rem; /* smaller envelope icon */
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-social a,
+  .social-icon,
+  .contact-card .social-links a {
+    font-size: 1.25rem; /* reduce social icons */
+    margin: 0 0.5rem;
+  }
+
+  .contact-card {
+    padding: 1.25rem; /* slightly smaller card padding */
+  }
 }
