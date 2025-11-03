@@ -47,3 +47,27 @@ window.addEventListener("scroll", () => {
     ? (navbar.style.background = "rgba(10,10,10,0.98)")
     : (navbar.style.background = "rgba(10,10,10,0.95)");
 });
+
+// Mobile nav toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-link");
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!expanded));
+      navLinks.classList.toggle("open");
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (navLinks.classList.contains("open")) {
+          navLinks.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  }
+});

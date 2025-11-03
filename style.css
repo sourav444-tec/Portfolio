@@ -47,6 +47,42 @@ body {
   gap: 2rem;
   list-style: none;
 }
+
+/* Mobile nav toggle button */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-left: 1rem;
+}
+.nav-toggle .bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* When mobile menu is opened */
+.nav-link.open {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  left: 5%;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(10, 10, 10, 0.98);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+}
+
 .nav-link a {
   color: var(--text);
   text-decoration: none;
@@ -713,5 +749,73 @@ html {
   .logo {
     font-size: 1.5rem;
     padding-left: 2rem;
+  }
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .fev-img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .hero {
+    padding: 8% 5%;
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .nav-link {
+    display: none; /* default hidden on small screens */
+  }
+
+  .nav-toggle {
+    display: block;
+    color: var(--text);
+  }
+
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .fev-img {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .skills h2,
+  .projects h2,
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .skill-card,
+  .project-card,
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .project-link,
+  .cta-button,
+  .contact-email-btn {
+    width: 100%;
+    text-align: center;
   }
 }
