@@ -78,7 +78,7 @@ open index.html    # macOS
 
 👤 **Sourav Sanyal**
 
-- Portfolio: [souravsanyal.netlify.app]
+- Portfolio: [https://souravsanyal.netlify.app/]
 - Email: [sanyalsourav570@gmail.com]
 - LinkedIn: [https://www.linkedin.com/in/sourav-sanyal-31b47b31b/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Br03BEac7RqefWlbK4erp1g%3D%3D]
 - GitHub: [sourav444-tec]
