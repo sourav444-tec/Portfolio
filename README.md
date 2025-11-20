@@ -71,7 +71,7 @@ open index.html    # macOS
 
 ## 📸 Screenshots
 
-![HOME PAGE](Screenshot 2025-11-20 175502.png)
+!![HOME]](image-4.png)
 ![Skill](image.png)
 ![Project](image-1.png)
 ![Get in Touch](image-2.png)
