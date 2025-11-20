@@ -71,11 +71,7 @@ open index.html    # macOS
 
 ## 📸 Screenshots
 
-![HOME](image-4.png)
-![Skill](image.png)
-![Project](image-1.png)
-![Get in Touch](image-2.png)
-
+![portfoli](image-4.png)
 ---
 
 ## 📬 Contact
