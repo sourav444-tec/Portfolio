@@ -119,8 +119,8 @@ body {
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 12% 5%;
+  align-items: flex-end;
+  padding: 8% 5% 0;
   background: radial-gradient(
     circle at 75% 30%,
     var(--accent-glow) 0%,
@@ -129,17 +129,19 @@ body {
 }
 
 .hero-content {
-  flex: 1;
+  flex: 0 0 52%;
   padding-right: 5rem;
+  padding-bottom: 5rem;
 }
 
 .hero-image {
-  flex: 1;
+  flex: 0 0 48%;
   text-align: center;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  align-self: stretch;
 }
 
 .hero-image::before {
@@ -147,15 +149,23 @@ body {
 }
 
 .fev-img {
-  width: min(100%, 430px);
-  height: 430px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 18%;
+  width: min(100%, 700px);
+  max-height: calc(100vh - 96px);
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+  object-position: center bottom;
   border: none;
   box-shadow: none;
   animation: float 3s ease-in-out infinite;
   filter: none;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 78%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%);
   position: relative;
   z-index: 1;
 }
@@ -166,7 +176,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 
@@ -758,18 +768,26 @@ html {
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     padding-top: 8rem;
   }
 
   .hero-content {
+    flex: 1;
     padding-right: 0;
+    padding-bottom: 0;
     margin-bottom: 3rem;
   }
 
+  .hero-image {
+    flex: 1;
+    align-self: auto;
+  }
+
   .fev-img {
-    width: min(100%, 330px);
-    height: 330px;
+    width: min(100%, 420px);
+    height: auto;
   }
 
   .nav-link {
@@ -788,9 +806,15 @@ html {
     font-size: 3rem;
   }
 
+  .hero-content,
+  .hero-image {
+    flex: 1;
+  }
+
   .fev-img {
-    width: min(100%, 360px);
-    height: 360px;
+    width: min(100%, 480px);
+    max-height: none;
+    height: auto;
   }
 
   .hero {
@@ -814,6 +838,11 @@ html {
     padding-bottom: 4rem;
   }
 
+  .hero-content,
+  .hero-image {
+    flex: 1;
+  }
+
   .hero h1 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
@@ -825,8 +854,9 @@ html {
   }
 
   .fev-img {
-    width: min(100%, 280px);
-    height: 280px;
+    width: min(100%, 320px);
+    max-height: none;
+    height: auto;
     margin: 0 auto;
   }
 

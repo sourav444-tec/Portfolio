@@ -1,95 +1,68 @@
-# Portfolio
+# Sourav Sanyal Portfolio
 
-This is my first portfolio
-<br>
-Author - Sourav Sanyal (COMPUTER APPLICATION)
-<br>
-Perfect! Let’s craft a professional, engaging **README.md** for your portfolio website. Since a README is the first impression on GitHub, it should explain what your project is, how to use it, and why it matters. Here’s a polished draft you can adapt:
+Personal portfolio website built with HTML, CSS, and JavaScript.
 
----
+This project showcases my profile, technical skills, project link, and contact options in a responsive single-page layout.
 
-# 🌐 Sourav Sanyal – Portfolio Website
+## Author
 
-A modern, responsive portfolio website showcasing my skills, projects, and contact information. Built to highlight my journey as a **Full-Stack Developer** and provide a central hub for my digital presence.
+Sourav Sanyal
 
----
+## Features
 
-## 🚀 Features
+- Responsive design for desktop, tablet, and mobile
+- Hero section with profile photo and quick action buttons
+- Skills section with Frontend, Backend, and MS Office tools
+- Project section linked to GitHub repository
+- Contact section with email and social links
+- Download/View CV button in hero section
 
-- **Responsive Design** – Works seamlessly across devices
-- **Dark Theme with Green Accents** – Sleek and modern UI
-- **Navigation Sections** – Home, Skills, Projects, Contact
-- **Hero Section** – Professional tagline and photo
-- **Contact Button** – Easy way to connect with me
+## Tech Stack
 
----
+- HTML5
+- CSS3
+- JavaScript (vanilla)
+- Font Awesome (icons)
 
-## 🛠️ Tech Stack
+## Current Project Structure
 
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Design:** Modern UI principles, responsive layout
-- **Deployment:** Can be hosted on GitHub Pages, Netlify, or Vercel
-
----
-
-## 📂 Project Structure
-
-```bash
-portfolio-website/
-│── index.html        # Main homepage
-│── /assets           # Images, icons, and other static files
-│── /css              # Stylesheets
-│── /js               # JavaScript files
-│── /projects         # Project showcase pages
-│── README.md         # Documentation
+```text
+Portfolio/
+|- index.html
+|- style.css
+|- script.js
+|- new fev.jpeg
+|- SOURAV SANYAL CV.pdf
+|- README.md
 ```
 
----
-
-## ⚡ Getting Started
-
-### Prerequisites
-
-- A modern browser (Chrome, Edge, Firefox)
-- Basic knowledge of HTML/CSS/JS
-
-### Run Locally
+## Run Locally
 
 ```bash
-# Clone the repository
 git clone https://github.com/sourav444-tec/Portfolio.git
-
-# Navigate to project folder
-cd portfolio-website
-
-# Open in browser
-start index.html   # Windows
-open index.html    # macOS
+cd Portfolio
+start index.html
 ```
 
----
+You can also run with a live server extension in VS Code.
 
-## 📸 Screenshots
+## Customize Quickly
 
-![portfoli](image-4.png)
----
+- Update profile photo path in index.html
+- Edit text/content sections in index.html
+- Change colors, spacing, and responsive rules in style.css
+- Adjust interactivity in script.js
 
-## 📬 Contact
+## Screenshot
 
-👤 **Sourav Sanyal**
+![Portfolio Screenshot](image.png)
 
-- Portfolio: [https://souravsanyal.netlify.app/]
-- Email: [sanyalsourav570@gmail.com]
-- LinkedIn: [https://www.linkedin.com/in/sourav-sanyal-31b47b31b/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Br03BEac7RqefWlbK4erp1g%3D%3D]
-- GitHub: [sourav444-tec]
+## Contact
 
----
+- Email: sanyalsourav570@gmail.com
+- GitHub: https://github.com/sourav444-tec
+- LinkedIn: https://www.linkedin.com/in/sourav-sanyal-31b47b31b/
 
-## ⭐ Acknowledgements
+## License
 
-- Inspired by modern portfolio designs
-- Built with passion for creativity + technology
-
----
-
-
+This project is open for learning and personal customization.
