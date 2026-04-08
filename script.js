@@ -71,3 +71,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Basic client-side protection against opening browser inspect tools
+document.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
+document.addEventListener("keydown", (event) => {
+  const key = event.key.toLowerCase();
+  const isDevToolsShortcut =
+    event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && ["i", "j", "c"].includes(key)) ||
+    (event.ctrlKey && key === "u") ||
+    (event.metaKey && event.altKey && key === "i");
+
+  if (isDevToolsShortcut) {
+    event.preventDefault();
+  }
+});

@@ -92,8 +92,4 @@ open index.html    # macOS
 
 ---
 
-👉 Tip: Once you push this to GitHub, you can enable **GitHub Pages** to make your portfolio live directly from the repo.
 
----
-
-Would you like me to also **add badges** (like GitHub stars, forks, or “Made with ❤️ in HTML/CSS/JS”) to make the README more eye-catching?
